@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+.notebooks_cache/
+
+# Data/Models
+data/
+models/*.pth
+models/*.pt
+models/*.onnx
+# keep exported fastai pkl in repo if you want deployment simplicity
+# comment out next line if you intend to commit the pkl
+# models/*.pkl
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS / editors
+.DS_Store
+*.swp
