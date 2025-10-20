@@ -1,0 +1,24 @@
+name: fastai-2025-cpu
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  # Core
+  - python=3.11
+  - pip
+  - jupyterlab
+  - ipywidgets
+  - nbdev
+
+  # Numeric (Torch 2.2.x is built against NumPy 1.x)
+  - numpy=1.26.4
+  - pillow=11.3.0        # streamlit 1.50.0 needs <12
+
+  # PyTorch CPU trio (from pytorch channel)
+  - pytorch=2.2.2
+  - torchvision=0.17.2
+  - torchaudio=2.2.2
+
+  # The rest via pip
+  - pip:
+      - -r pip-constraints.txt

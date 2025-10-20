@@ -1,0 +1,20 @@
+# Core DL stack (already installed via conda for torch*, but kept here for tools that parse constraints)
+torch==2.2.2
+torchvision==0.17.2
+torchaudio==2.2.2
+
+# fast.ai stack
+fastai==2.7.15
+fastcore>=1.5.29,<1.6
+
+# Apps
+streamlit==1.50.0      # requires pillow<12
+gradio==5.49.1
+
+# NLP
+spacy==3.8.7           # works with typing_extensions>=4.13
+
+# Safety pins
+numpy<2                # matches conda pin (1.26.4)
+pillow<12              # matches conda pin (11.3.0)
+typing_extensions>=4.13,<5
