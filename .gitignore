@@ -25,3 +25,4 @@ models/*.onnx
 # OS / editors
 .DS_Store
 *.swp
+models/*.pkl
